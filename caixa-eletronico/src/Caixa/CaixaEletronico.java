@@ -8,6 +8,9 @@ public class CaixaEletronico {
 Scanner s = new Scanner(System.in);
 
 int uninotas;             // variavel unidade de quantas notas
+
+System.out.println("Escreva o Valor do Saque:");
+
 int valor = s.nextInt();	 //recebe o valor do usuario
 	
 int vetor[]  = new int[7]; //meu vetor que armazena minhas notas
