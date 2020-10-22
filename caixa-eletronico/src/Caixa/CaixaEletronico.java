@@ -4,54 +4,53 @@ import java.util.Scanner;
 
 public class CaixaEletronico {
 	public static void main(String[] args) {
+		
+Scanner s = new Scanner(System.in);
 
-Scanner usuario = new Scanner(System.in);
-   
+int uninotas;             // variavel unidade de quantas notas
+int valor = s.nextInt();	 //recebe o valor do usuario
 	
-	int valor = usuario.nextInt();
+int vetor[]  = new int[7]; //meu vetor que armazena minhas notas
+
+vetor[0] = 200;
+vetor[1] = 100;
+vetor[2] = 50;
+vetor[3] = 20;
+vetor[4] = 10;
+vetor[5] = 5;
+vetor[6] = 2;
+
+System.out.println("veja as opções");
+
+for(int i = 1; i < vetor.length; i++) { //laço de repetição que o tamanho é o tamanho do vetor
 	
-	int nota_100 = 100;
-	int nota_50 = 50;
-	int nota_10 = 10;
-	int nota_5 = 5;
-	int nota_1 = 1;	
-    int Limitedocaixaeletronico;
 	
 	
-	if(valor >= 10 && valor <= 1500) {
-		if(nota_100 > 0) {
-			nota_100 = valor / 100; 
-			valor = valor % 100;   
-			System.out.println(nota_100 + " notas de 100");
-		} 
-		if(nota_50 > 0) {
-			nota_50 = valor / 50;
-			valor = valor % 50;
-			System.out.println(nota_50 + " notas de 50");
-		}
-		if(nota_10 > 0) {
-			nota_10 = valor / 10;
-			valor = valor % 10;
-			System.out.println(nota_10 + " notas de 10");
-		}if(nota_5 > 0) {
-			nota_5 = valor / 5;
-			valor = valor % 5;
-			System.out.println(nota_5 + " notas de 5");
-		}if(nota_1 > 0) {
-			nota_1 = valor / 1;
-			valor = valor % 1;
-			System.out.println(nota_1 + " notas de 1");
-		}
-	}else {
-		System.out.println("Não é possível realizar o saque");
-	}	
+if (valor >=  vetor[i] ) { // a condição é se o valor for maior que o vetor minha cédula.
+	
+	
+	uninotas = valor / vetor[i]; // valor divido por  a nota mais proxima da entrada.
+	
+	
+	
+	System.out.println(  "Saque " +uninotas+ " nota de " +vetor [i]); // printo o valor das quantidades das notas que precisara ser utilizado e também informa quais sao as notas
+	
+}
 
 
 
+
+}
+
+
+
+	
+	
 
 
 
 
 
 }
+
 }

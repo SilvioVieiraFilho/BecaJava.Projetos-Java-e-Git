@@ -2,7 +2,7 @@ package Caixa;
 
 import java.util.Scanner;
 
-public class Caixa {
+public class Caixa_Troco {
 
 	public static void main(String[] args) {
 		
@@ -21,7 +21,7 @@ public class Caixa {
 		        
 		        
 		    
-		        
+		        double numero;
 		      double x = 1;
 
 		      
@@ -31,14 +31,14 @@ public class Caixa {
 		      
 		    	   System.out.println("Insira Valor:");
 			        
-			        double numero =  valorDigitado.nextDouble();
+			         numero =  valorDigitado.nextDouble();
 			
 			       
 		       
 		       if(numero >= feijao) {
 		       
 	
-		        double troco =   feijao  - numero;
+		        double troco =   (numero - feijao);
 		        
 		        
 
